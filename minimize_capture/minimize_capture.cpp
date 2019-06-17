@@ -2,9 +2,12 @@
 //
 
 #include "pch.h"
-#include <iostream>
+#include <Windows.h>
+#include <log4cxx/logger.h>
+
+log4cxx::LoggerPtr logger(log4cxx::Logger::getLogger("minimize_capture"));
 
 int main()
 {
-	std::cout << "Hello World!\n"; 
+	LOG4CXX_INFO(logger, "main");
 }
